@@ -1,3 +1,19 @@
+* Project manager notes
+
+
+** Emacs
+ To use this file for project management, the following can be done:
+
+ - C-c a to go to the agenda view
+ - < to restrict to buffer
+ - v to view a certain time frame
+
+** Taskjuggler
+Use effort to allocate effort, but be mindful that this blocks resources so scheduling might be off.
+
+
+
+
 * Resources                                            :taskjuggler_resource:
   :PROPERTIES:
   :COLUMNS:  %70ITEM(Resource) %10resource_id
@@ -38,129 +54,127 @@
    :resource_id: netravnen
    :END:
 
-* DKNOG9                                                :taskjuggler_project:
+* TODO DKNOG9                                           :taskjuggler_project:
   DEADLINE: <2019-03-14 Thu> SCHEDULED: <2018-10-08 Mon>
   :PROPERTIES:
-  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %10start %20DEADLINE %end %5depends
-  :START:    2018-10-08
-  :END:      2019-03-14
+  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %5effort %20DEADLINE %5depends
   :END:
 
-** Program
+** TODO Program
    :PROPERTIES:
    :task_id:  dknog9_program
    :END:
 
-*** Set program committee
+*** TODO Set program committee
     SCHEDULED: <2018-10-08 Mon> DEADLINE: <2018-11-01 Thu>
     :PROPERTIES:
     :task_id:  dknog9_program_set_committee
-    :START:    2018-10-08
-    :END:      2018-11-01
-    :ALLOCATE: allan
-    :END:
 
-*** Call for program
-    SCHEDULED: <2018-10-21 Sun> DEADLINE: <2019-02-01 Fri>
+
+*** TODO Call for program start
+    SCHEDULED: <2018-10-21 Sun>
     :PROPERTIES:
+    :MILESTONE:
     :task_id:  dknog9_program_cfp
-    :depends:
-    :START:    2018-10-21
-    :END:      2019-02-01
-    :ALLOCATE: allan
+    :DEPENDS:  dknog9_media_cfp
     :END:
 
-** Venue
+** TODO Venue
    :PROPERTIES:
    :task_id:  dknog9_venue
    :END:
 
-*** Sign with venue
-    DEADLINE: <2018-11-25 Sun>
+*** TODO Sign with venue
     :PROPERTIES:
     :task_id:  dknog9_venue_sign
     :END:      2018-11-25
     :ALLOCATE: lja, allan
     :END:
 
-** Media
+** TODO Media
    :PROPERTIES:
    :task_id:  dknog9_media
    :END:
 
-*** Refresh website
-    DEADLINE: <2018-10-28 Sun>
+*** TODO Refresh website
+    SCHEDULED: <2018-10-08 Mon> DEADLINE: <2018-10-21 Sun>
     :PROPERTIES:
     :task_id:  dknog9_media_website_refresh
-    :END:      2018-10-28
     :ALLOCATE: allan, netravnen
+    :EFFORT: 1w
+    :DEPENDS:  dknog9_media_logos
     :END:
 
-*** Update logos
+*** TODO Update logos
+    SCHEDULED: <2018-10-08 Mon>
     :PROPERTIES:
     :task_id:  dknog9_media_logos
     :ALLOCATE: allan
+    :EFFORT: 1w
     :END:
 
-*** Design banners
+*** TODO Design banners
+    SCHEDULED: <2018-12-01 Sat>
     :PROPERTIES:
     :task_id:  dknog9_media_banners
     :ALLOCATE: allan
+    :EFFORT: 1w
     :END:
 
-*** Decide on t-shirt design
+*** TODO Decide on t-shirt design
     :PROPERTIES:
     :task_id:  dknog9_media_tshirts
     :ALLOCATE: allan
     :END:
 
-*** Provide Call-for-sponsorship text
+*** TODO Provide Call-for-sponsorship text
     :PROPERTIES:
     :task_id:  dknog9_media_cfp
     :ALLOCATE: allan
+    :EFFORT: 1w
     :END:
 
 
-** Social
+** TODO Social
    :PROPERTIES:
    :task_id:  dknog9_social
    :END:
 
-*** Provide social budget to planning committee
+*** TODO Provide social budget to planning committee
     :PROPERTIES:
     :task_id:  dknog9_social_budget
     :ALLOCATE: cjo
     :END:
 
-*** Find suitable venues
+*** TODO Find suitable venues
     :PROPERTIES:
     :task_id:  dknog9_social_venue_find
     :ALLOCATE: cjo
     :END:
 
-*** Sign social venue contract
+*** TODO Sign social venue contract
     :PROPERTIES:
     :task_id:  dknog9_social_venue_contract
     :ALLOCATE: cjo
     :END:
 
-*** Organise transport
+*** TODO Organise transport
     :PROPERTIES:
     :task_id:  dknog9_social_transport
     :END:
 
-** Sponsorships
+** TODO Sponsorships
    :PROPERTIES:
    :task_id:  dknog9_sponsorships
    :END:
 
-*** Contact previous sponsors
+*** TODO Contact previous sponsors
     :PROPERTIES:
     :task_id:  dknog9_sponsor_contact_previous
     :ALLOCATE: lja
     :END:
 
-*** Contact potential sponsors
+*** TODO Contact potential sponsors
     :PROPERTIES:
     :task_id:  dknog9_sponsor_contact_future
     :ALLOCATE: lja
