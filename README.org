@@ -1,0 +1,8 @@
+#+TITLE: DKNOG9 Project files
+This repository contains the compiled and raw project for DKNOG9
+
+* How to update
+
+The project file is maintained through an org-mode file, dknog9.org. To update
+the project, update the org-mode file, use ox-taskjuggler to export to .tjp, and
+run make to generate the html reports.
