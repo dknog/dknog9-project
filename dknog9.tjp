@@ -1,4 +1,4 @@
-project nil "DKNOG9" "1.0" 2018-10-05 - 2019-03-14 {
+project nil "DKNOG9" "1.0" 2018-10-08 - 2019-03-14 {
 }
 shift s40 "Part time shift" {
   workinghours wed, thu, fri off
@@ -18,46 +18,66 @@ resource rosiak "Soeren Rosiak" {
 resource netravnen "Christoffer Hansen" {
 }
 task dknog9 "DKNOG9" {
-  purge allocate
-  allocate allan
   task dknog9_program "Program" {
-    task dknog9_program_set_committee "Set program committee" {
-      milestone
+    task set "Set program committee" {
+      start 2018-10-08
+      end 2018-11-01
     }
     task dknog9_program_cfp "Call for program" {
-      milestone
+      start 2018-10-21
+      end 2019-02-01
     }
   }
   task dknog9_venue "Venue" {
     task dknog9_venue_sign "Sign with venue" {
+      purge allocate
+      allocate lja, allan
       milestone
+      end 2018-11-26
     }
   }
   task dknog9_media "Media" {
     task dknog9_media_website_refresh "Refresh website" {
-      milestone
+      depends !dknog9_media_logos
+      purge allocate
+      allocate allan, netravnen
+      effort 168.0h
     }
     task dknog9_media_logos "Update logos" {
-      milestone
+      purge allocate
+      allocate allan
+      effort 168.0h
     }
     task dknog9_media_banners "Design banners" {
-      milestone
+      purge allocate
+      allocate allan
+      effort 168.0h
     }
     task dknog9_media_tshirts "Decide on t-shirt design" {
+      purge allocate
+      allocate allan
       milestone
     }
     task dknog9_media_cfp "Provide Call-for-sponsorship text" {
-      milestone
+      purge allocate
+      allocate allan
+      effort 168.0h
     }
   }
   task dknog9_social "Social" {
     task dknog9_social_budget "Provide social budget to planning committee" {
+      purge allocate
+      allocate cjo
       milestone
     }
     task dknog9_social_venue_find "Find suitable venues" {
+      purge allocate
+      allocate cjo
       milestone
     }
     task dknog9_social_venue_contract "Sign social venue contract" {
+      purge allocate
+      allocate cjo
       milestone
     }
     task dknog9_social_transport "Organise transport" {
@@ -66,9 +86,13 @@ task dknog9 "DKNOG9" {
   }
   task dknog9_sponsorships "Sponsorships" {
     task dknog9_sponsor_contact_previous "Contact previous sponsors" {
+      purge allocate
+      allocate lja
       milestone
     }
     task dknog9_sponsor_contact_future "Contact potential sponsors" {
+      purge allocate
+      allocate lja
       milestone
     }
   }

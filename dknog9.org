@@ -57,7 +57,7 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
 * TODO DKNOG9                                           :taskjuggler_project:
   DEADLINE: <2019-03-14 Thu> SCHEDULED: <2018-10-08 Mon>
   :PROPERTIES:
-  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %5effort %20DEADLINE %5depends
+  :COLUMNS:  %70ITEM(Task) %task_id %allocate %16SCHEDULED %16start %5effort %16DEADLINE %16end %depends
   :END:
 
 ** TODO Program
@@ -68,15 +68,19 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
 *** TODO Set program committee
     SCHEDULED: <2018-10-08 Mon> DEADLINE: <2018-11-01 Thu>
     :PROPERTIES:
+    :START:    2018-10-08
+    :END:      2018-11-01
+    :END:
+    :PROPERTIES:
     :task_id:  dknog9_program_set_committee
 
 
-*** TODO Call for program start
-    SCHEDULED: <2018-10-21 Sun>
+*** TODO Call for program
+    DEADLINE: <2019-02-01 Fri> SCHEDULED: <2018-10-21 Sun>
     :PROPERTIES:
-    :MILESTONE:
     :task_id:  dknog9_program_cfp
-    :DEPENDS:  dknog9_media_cfp
+    :START:    2018-10-21
+    :END:      2019-02-01
     :END:
 
 ** TODO Venue
@@ -85,10 +89,11 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
    :END:
 
 *** TODO Sign with venue
+    SCHEDULED: <2018-11-26 Mon>
     :PROPERTIES:
     :task_id:  dknog9_venue_sign
-    :END:      2018-11-25
     :ALLOCATE: lja, allan
+    :END:      2018-11-26
     :END:
 
 ** TODO Media
