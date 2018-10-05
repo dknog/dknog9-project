@@ -1,5 +1,3 @@
-
-
 * Resources                                            :taskjuggler_resource:
   :PROPERTIES:
   :COLUMNS:  %70ITEM(Resource) %10resource_id
@@ -41,9 +39,11 @@
    :END:
 
 * DKNOG9                                                :taskjuggler_project:
-  DEADLINE: <2019-03-14 Thu>
+  DEADLINE: <2019-03-14 Thu> SCHEDULED: <2018-10-08 Mon>
   :PROPERTIES:
-  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %10DEADLINE %5depends
+  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %10start %20DEADLINE %end %5depends
+  :START:    2018-10-08
+  :END:      2019-03-14
   :END:
 
 ** Program
@@ -52,16 +52,22 @@
    :END:
 
 *** Set program committee
-    DEADLINE: <2018-11-01 Thu>
+    SCHEDULED: <2018-10-08 Mon> DEADLINE: <2018-11-01 Thu>
     :PROPERTIES:
     :task_id:  dknog9_program_set_committee
+    :START:    2018-10-08
+    :END:      2018-11-01
+    :ALLOCATE: allan
     :END:
 
 *** Call for program
-    DEADLINE: <2019-02-01 Fri>
+    SCHEDULED: <2018-10-21 Sun> DEADLINE: <2019-02-01 Fri>
     :PROPERTIES:
     :task_id:  dknog9_program_cfp
     :depends:
+    :START:    2018-10-21
+    :END:      2019-02-01
+    :ALLOCATE: allan
     :END:
 
 ** Venue
@@ -73,6 +79,8 @@
     DEADLINE: <2018-11-25 Sun>
     :PROPERTIES:
     :task_id:  dknog9_venue_sign
+    :END:      2018-11-25
+    :ALLOCATE: lja, allan
     :END:
 
 ** Media
@@ -84,26 +92,32 @@
     DEADLINE: <2018-10-28 Sun>
     :PROPERTIES:
     :task_id:  dknog9_media_website_refresh
+    :END:      2018-10-28
+    :ALLOCATE: allan, netravnen
     :END:
 
 *** Update logos
     :PROPERTIES:
     :task_id:  dknog9_media_logos
+    :ALLOCATE: allan
     :END:
 
 *** Design banners
     :PROPERTIES:
     :task_id:  dknog9_media_banners
+    :ALLOCATE: allan
     :END:
 
 *** Decide on t-shirt design
     :PROPERTIES:
     :task_id:  dknog9_media_tshirts
+    :ALLOCATE: allan
     :END:
 
 *** Provide Call-for-sponsorship text
     :PROPERTIES:
     :task_id:  dknog9_media_cfp
+    :ALLOCATE: allan
     :END:
 
 
@@ -115,16 +129,19 @@
 *** Provide social budget to planning committee
     :PROPERTIES:
     :task_id:  dknog9_social_budget
+    :ALLOCATE: cjo
     :END:
 
 *** Find suitable venues
     :PROPERTIES:
     :task_id:  dknog9_social_venue_find
+    :ALLOCATE: cjo
     :END:
 
 *** Sign social venue contract
     :PROPERTIES:
     :task_id:  dknog9_social_venue_contract
+    :ALLOCATE: cjo
     :END:
 
 *** Organise transport
@@ -140,9 +157,11 @@
 *** Contact previous sponsors
     :PROPERTIES:
     :task_id:  dknog9_sponsor_contact_previous
+    :ALLOCATE: lja
     :END:
 
 *** Contact potential sponsors
     :PROPERTIES:
     :task_id:  dknog9_sponsor_contact_future
+    :ALLOCATE: lja
     :END:
