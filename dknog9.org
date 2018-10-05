@@ -1,0 +1,148 @@
+
+
+* Resources                                            :taskjuggler_resource:
+  :PROPERTIES:
+  :COLUMNS:  %70ITEM(Resource) %10resource_id
+  :END:
+
+** Allan Eising
+   :PROPERTIES:
+   :resource_id: allan
+   :END:
+
+** Lasse Jarlskov
+   :PROPERTIES:
+   :resource_id: lja
+   :END:
+
+** Mikkel Mondrup-Kristensen
+   :PROPERTIES:
+   :resource_id: monrad
+   :END:
+
+** Jan Gronemann
+   :PROPERTIES:
+   :resource_id: jan
+   :END:
+
+** Christian Johannesen
+   :PROPERTIES:
+   :resource_id: cjo
+   :END:
+
+** Soeren Rosiak
+   :PROPERTIES:
+   :resource_id: rosiak
+   :END:
+
+** Christoffer Hansen
+   :PROPERTIES:
+   :resource_id: netravnen
+   :END:
+
+* DKNOG9                                                :taskjuggler_project:
+  DEADLINE: <2019-03-14 Thu>
+  :PROPERTIES:
+  :COLUMNS:  %70ITEM(Task) %task_id %allocate %10SCHEDULED %10DEADLINE %5depends
+  :END:
+
+** Program
+   :PROPERTIES:
+   :task_id:  dknog9_program
+   :END:
+
+*** Set program committee
+    DEADLINE: <2018-11-01 Thu>
+    :PROPERTIES:
+    :task_id:  dknog9_program_set_committee
+    :END:
+
+*** Call for program
+    DEADLINE: <2019-02-01 Fri>
+    :PROPERTIES:
+    :task_id:  dknog9_program_cfp
+    :depends:
+    :END:
+
+** Venue
+   :PROPERTIES:
+   :task_id:  dknog9_venue
+   :END:
+
+*** Sign with venue
+    DEADLINE: <2018-11-25 Sun>
+    :PROPERTIES:
+    :task_id:  dknog9_venue_sign
+    :END:
+
+** Media
+   :PROPERTIES:
+   :task_id:  dknog9_media
+   :END:
+
+*** Refresh website
+    DEADLINE: <2018-10-28 Sun>
+    :PROPERTIES:
+    :task_id:  dknog9_media_website_refresh
+    :END:
+
+*** Update logos
+    :PROPERTIES:
+    :task_id:  dknog9_media_logos
+    :END:
+
+*** Design banners
+    :PROPERTIES:
+    :task_id:  dknog9_media_banners
+    :END:
+
+*** Decide on t-shirt design
+    :PROPERTIES:
+    :task_id:  dknog9_media_tshirts
+    :END:
+
+*** Provide Call-for-sponsorship text
+    :PROPERTIES:
+    :task_id:  dknog9_media_cfp
+    :END:
+
+
+** Social
+   :PROPERTIES:
+   :task_id:  dknog9_social
+   :END:
+
+*** Provide social budget to planning committee
+    :PROPERTIES:
+    :task_id:  dknog9_social_budget
+    :END:
+
+*** Find suitable venues
+    :PROPERTIES:
+    :task_id:  dknog9_social_venue_find
+    :END:
+
+*** Sign social venue contract
+    :PROPERTIES:
+    :task_id:  dknog9_social_venue_contract
+    :END:
+
+*** Organise transport
+    :PROPERTIES:
+    :task_id:  dknog9_social_transport
+    :END:
+
+** Sponsorships
+   :PROPERTIES:
+   :task_id:  dknog9_sponsorships
+   :END:
+
+*** Contact previous sponsors
+    :PROPERTIES:
+    :task_id:  dknog9_sponsor_contact_previous
+    :END:
+
+*** Contact potential sponsors
+    :PROPERTIES:
+    :task_id:  dknog9_sponsor_contact_future
+    :END:

@@ -1,0 +1,107 @@
+project nil "DKNOG9" "1.0" 2018-10-05 - 2019-03-14 {
+}
+shift s40 "Part time shift" {
+  workinghours wed, thu, fri off
+}
+resource allan "Allan Eising" {
+}
+resource lja "Lasse Jarlskov" {
+}
+resource monrad "Mikkel Mondrup-Kristensen" {
+}
+resource jan "Jan Gronemann" {
+}
+resource cjo "Christian Johannesen" {
+}
+resource rosiak "Soeren Rosiak" {
+}
+resource netravnen "Christoffer Hansen" {
+}
+task dknog9 "DKNOG9" {
+  purge allocate
+  allocate allan
+  task dknog9_program "Program" {
+    task dknog9_program_set_committee "Set program committee" {
+      milestone
+    }
+    task dknog9_program_cfp "Call for program" {
+      milestone
+    }
+  }
+  task dknog9_venue "Venue" {
+    task dknog9_venue_sign "Sign with venue" {
+      milestone
+    }
+  }
+  task dknog9_media "Media" {
+    task dknog9_media_website_refresh "Refresh website" {
+      milestone
+    }
+    task dknog9_media_logos "Update logos" {
+      milestone
+    }
+    task dknog9_media_banners "Design banners" {
+      milestone
+    }
+    task dknog9_media_tshirts "Decide on t-shirt design" {
+      milestone
+    }
+    task dknog9_media_cfp "Provide Call-for-sponsorship text" {
+      milestone
+    }
+  }
+  task dknog9_social "Social" {
+    task dknog9_social_budget "Provide social budget to planning committee" {
+      milestone
+    }
+    task dknog9_social_venue_find "Find suitable venues" {
+      milestone
+    }
+    task dknog9_social_venue_contract "Sign social venue contract" {
+      milestone
+    }
+    task dknog9_social_transport "Organise transport" {
+      milestone
+    }
+  }
+  task dknog9_sponsorships "Sponsorships" {
+    task dknog9_sponsor_contact_previous "Contact previous sponsors" {
+      milestone
+    }
+    task dknog9_sponsor_contact_future "Contact potential sponsors" {
+      milestone
+    }
+  }
+}
+textreport report "Plan" {
+  formats html
+  header '== DKNOG9 =='
+
+  center -8<-
+    [#Plan Plan] | [#Resource_Allocation Resource Allocation]
+    ----
+    === Plan ===
+    <[report id="plan"]>
+    ----
+    === Resource Allocation ===
+    <[report id="resourceGraph"]>
+  ->8-
+}
+
+# A traditional Gantt chart with a project overview.
+taskreport plan "" {
+  headline "Project Plan"
+  columns bsi, name, start, end, effort, chart
+  loadunit shortauto
+  hideresource 1
+}
+
+# A graph showing resource allocation. It identifies whether each
+# resource is under- or over-allocated for.
+resourcereport resourceGraph "" {
+  headline "Resource Allocation Graph"
+  columns no, name, effort, weekly
+  loadunit shortauto
+  hidetask ~(isleaf() & isleaf_())
+  sorttasks plan.start.up
+}
