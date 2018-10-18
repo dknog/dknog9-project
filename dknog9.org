@@ -90,6 +90,11 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
     :ALLOCATE: lja, allan
     :END:
 
+
+*** TODO Arrangér videostreaming
+    :PROPERTIES:
+    :allocate: ch
+    :END:
 ** TODO Media
    :PROPERTIES:
    :task_id:  dknog9_media
