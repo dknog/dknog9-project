@@ -18,8 +18,10 @@ resource rosiak "Soeren Rosiak" {
 resource netravnen "Christoffer Hansen" {
 }
 task dknog9 "DKNOG9" {
+  start 2018-10-08
+  end 2019-03-14
   task dknog9_program "Program" {
-    task set "Set program committee" {
+    task dknog9_program_set_committee "Set program committee" {
       start 2018-10-08
       end 2018-11-01
     }
@@ -33,25 +35,27 @@ task dknog9 "DKNOG9" {
       purge allocate
       allocate lja, allan
       milestone
-      end 2018-11-26
+      start 2018-11-26
     }
   }
   task dknog9_media "Media" {
     task dknog9_media_website_refresh "Refresh website" {
-      depends !dknog9_media_logos
       purge allocate
       allocate allan, netravnen
-      effort 168.0h
+      milestone
+      end 2018-10-21
     }
     task dknog9_media_logos "Update logos" {
       purge allocate
       allocate allan
       effort 168.0h
+      start 2018-10-08
     }
     task dknog9_media_banners "Design banners" {
       purge allocate
       allocate allan
       effort 168.0h
+      start 2018-12-01
     }
     task dknog9_media_tshirts "Decide on t-shirt design" {
       purge allocate
