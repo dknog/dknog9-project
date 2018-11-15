@@ -95,6 +95,10 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
     :allocate: marie
     :task_id:  dknog9_contact_schools
     :END:
+*** TODO Communication regarding supportive tickets
+    :PROPERTIES:
+    :allocate: marie
+    :END:
 ** TODO Venue
    :PROPERTIES:
    :task_id:  dknog9_venue
@@ -215,4 +219,4 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
 
 ** TODO Administrative
 
-*** TODO Account for daniel, Marie
+*** WORKING Account for daniel, Marie
