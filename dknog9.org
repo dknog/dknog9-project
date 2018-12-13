@@ -220,3 +220,13 @@ Use effort to allocate effort, but be mindful that this blocks resources so sche
 ** TODO Administrative
 
 *** WORKING Account for daniel, Marie
+
+** Venue
+
+** Tilmelding åbner
+
+** Tilmelding lukker
+
+** Social sted, kontrakt
+
+** Streaming
